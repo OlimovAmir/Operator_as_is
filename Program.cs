@@ -8,9 +8,23 @@ class Program
     {
         Point point = new Point();
 
-        point.Print();
+        point.Print(25, 23);
+
+        object obj = new Point { X = 11, Y = 22 };
+        Foo(obj);
+
+
     }
 
+    static void Foo(object obj)
+    {
+        Point point = obj as Point;
+
+        if (point != null)
+        {
+            point.Print(12, 36);
+        }
+    }
 
 
     public void WriteToFile(List<Person> people, string filePath)

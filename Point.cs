@@ -11,10 +11,10 @@ namespace Operator_as_is
         public int X { get; set; }
         public int Y { get; set; }
 
-        public void Print()
+        public void Print(int x, int y)
         {
-            Console.WriteLine($"X:\t {X}");
-            Console.WriteLine($"Y:\t {Y}");
+            Console.WriteLine($"X:\t {this.X = x}");
+            Console.WriteLine($"Y:\t {this.Y = y}");
         }
     }
 }
