@@ -28,9 +28,9 @@ class Program
 
     static void Bar(object obj)
     {
-        if (obj is Point)
+        if (obj is Point point)
         {
-            Point point = (Point)obj;
+            //Point point = (Point)obj;
 
             point.Print(point.X = 2, point.Y = 3);
         }
