@@ -12,7 +12,7 @@ class Program
 
         object obj = new Point { X = 11, Y = 22 };
         Foo(obj);
-
+        Bar(obj);
 
     }
 
@@ -23,6 +23,16 @@ class Program
         if (point != null)
         {
             point.Print(12, 36);
+        }
+    }
+
+    static void Bar(object obj)
+    {
+        if (obj is Point)
+        {
+            Point point = (Point)obj;
+
+            point.Print(point.X = 2, point.Y = 3);
         }
     }
 
